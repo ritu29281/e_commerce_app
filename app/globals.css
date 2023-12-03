@@ -1,0 +1,698 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    height: 500px;
+    width: 100%;
+    padding-top: 12px;
+}
+
+.line {
+    width: 98%;
+    height: 2px;
+    align-items: center;
+    justify-content: center;
+    margin: 12px 12px auto;
+    background-color: rgb(205, 204, 204);
+}
+
+#left {
+    width: 50%;
+    /* padding: 75px 140px; */
+    padding-left: 120px;
+    padding-top: 75px;
+}
+
+#left>h1 {
+    text-align: left;
+    font-weight: light;
+    margin: 24px 0px;
+}
+
+#left>p {
+    margin: 4px;
+    font-size: 20px;
+    text-align: left;
+    font-weight: light;
+}
+
+#right {
+    width: 50%;
+    padding: 65px 140px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    position: absolute;
+    height: 350px;
+    width: 20%;
+    justify-content: center;
+    /* margin: auto; */
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    z-index: 1;
+}
+
+.back {
+    position: absolute;
+    border: 2px solid rgb(173, 173, 173);
+    height: 350px;
+    width: 15%;
+    margin-right: 100px;
+    margin: 15px;
+    justify-content: center;
+    /* margin: auto; */
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    z-index: 1;
+}
+
+.btn1 {
+    margin: 35px 10px;
+    height: 48px;
+    width: 150px;
+    align-items: center;
+    border-radius: 2px;
+    justify-content: center;
+    display: flex;
+    background-color: black;
+    color: white
+}
+
+.section {
+    width: 980px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    margin: 30px auto;
+    justify-content: center;
+    position: relative;
+    /* justify-content: right; */
+}
+
+
+/* .tag {
+    background-color: antiquewhite;
+    width: 25px;
+    height: 300px;
+    transform: rotate(-90deg);
+} */
+
+.tag {
+    margin-right: 470px;
+    margin-top: 7px;
+    position: absolute;
+    transform: rotate(-90deg);
+}
+
+.tag>h2 {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.box {
+    height: 350px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 32px;
+}
+
+.leftbox {
+    /* background-color: red; */
+    width: 230px;
+    height: 380px;
+}
+
+.leftbox>img {
+    width: 230px;
+    height: 380px;
+}
+
+.rightbox {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 380px;
+    /* background-color: red; */
+}
+
+.upper {
+    display: flex;
+    height: 190px;
+    width: 400px;
+}
+
+.upper>img {
+    padding-left: 4px;
+}
+
+.lower>img {
+    padding-left: 4px;
+    padding-top: 4px;
+}
+
+.lower {
+    display: flex;
+    height: 190px;
+    width: 400px;
+}
+
+.lorem {
+    position: absolute;
+    height: 60%;
+    /* background-color: red; */
+    width: 400px;
+    bottom: 8px;
+    left: 57%;
+}
+
+.lorem>p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.lorembtn {
+    margin-top: 30px;
+    width: 150px;
+    height: 38px;
+    border-radius: 2px;
+    background-color: aliceblue;
+    color: black;
+    justify-content: center;
+}
+
+.zara {
+    position: absolute;
+    overflow: hidden;
+    bottom: 50%;
+    top: 30px;
+    left: 64.5%;
+    height: 53%;
+    width: 480px;
+    opacity: 0.1;
+}
+
+#form {
+    width: 100%;
+}
+
+#submit {
+    width: 10%;
+    height: 45px;
+    margin-left: 5%;
+    border-bottom: 3px solid black;
+}
+
+#formemail {
+    width: 85%;
+    height: 45px;
+    background-color: transparent;
+    border-bottom: 3px solid black;
+}
+
+#formemail::placeholder {
+    padding-left: 2%;
+}
+
+
+/*@media screen and (max-width:1046px) {
+    .zara {
+        position: absolute;
+        bottom: 50%;
+        top: 12px;
+        left: 65%;
+    }
+    .lorem {
+        position: absolute;
+        bottom: 12px;
+        left: 57%;
+    }
+    .lorem>p {
+        font-size: 1rem;
+        color: #fff;
+    }
+    .lorembtn {
+        margin-top: 25px;
+        width: 150px;
+        height: 38px;
+        border-radius: 2px;
+        background-color: aliceblue;
+        color: black;
+        justify-content: center;
+    }
+}*/
+
+@media screen and (max-width:640px) {
+    #container {
+        width: 100%;
+    }
+    #home {
+        width: 1046px;
+    }
+    #nav>h2 {
+        font-size: 13px;
+    }
+    #right>img {
+        width: 170px;
+        height: 320px;
+    }
+    .back {
+        width: 170px;
+        height: 320px;
+    }
+    #subscribe {
+        width: 1046px;
+        margin-top: 64px;
+        align-items: center;
+        justify-content: center;
+    }
+    #Products {
+        width: 1046px;
+        margin: 24px auto;
+        padding-left: 20%;
+        padding-right: 20%;
+        align-items: center;
+    }
+    #Products>div {
+        width: 60%;
+    }
+    #dress {
+        width: 1046px;
+    }
+    #top {
+        width: 80%;
+        margin: auto;
+    }
+    #bottom {
+        width: 80%;
+        margin: auto;
+    }
+    #top>div>h2 {
+        font-size: 13px;
+    }
+    #top>div>p {
+        font-size: 13px;
+    }
+    #bottom>div>h2 {
+        font-size: 13px;
+    }
+    #bottom>div>p {
+        font-size: 13px;
+    }
+    #zara {
+        width: 1046px;
+    }
+    .zara {
+        width: 340px;
+        height: 200px;
+    }
+    #seller {
+        width: 1046px;
+        justify-content: center;
+    }
+    #Product2 {
+        width: 810px;
+        margin-top: 24px;
+        margin-left: 28%;
+    }
+    #Product2>div {
+        width: 40%;
+    }
+    #slider {
+        width: 810px;
+        margin-left: 28%;
+    }
+    #ig {
+        width: 1046px;
+        height: 700px;
+    }
+    #ig>div>img {
+        height: 120px;
+        width: 120px;
+    }
+    #email {
+        width: 100%;
+    }
+    #form {
+        width: 77%;
+        justify-content: left;
+    }
+    #submit {
+        width: 10%;
+        height: 45px;
+        margin-left: 5%;
+        border-bottom: 3px solid black;
+    }
+    #formemail {
+        width: 85%;
+        height: 45px;
+        background-color: transparent;
+        border-bottom: 3px solid black;
+    }
+    #formemail::placeholder {
+        padding-left: 2%;
+    }
+    #footer {
+        width: 1040px;
+        margin: auto;
+        justify-content: center;
+    }
+    #fourth {
+        width: 25%;
+    }
+    .logo {
+        margin-top: 2px;
+    }
+    .foot {
+        width: 1046px;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:1040px) {
+    #screen {
+        width: 100%;
+    }
+    #home {
+        width: 100%;
+    }
+    #nav>h2 {
+        font-size: 13px;
+    }
+    .mid {
+        width: 100%;
+    }
+    #mid1 {
+        width: 80%;
+    }
+    #mid1>img {
+        width: 17%;
+        height: 7%;
+    }
+    .section {
+        width: 100%;
+    }
+    .tag {
+        margin-bottom: 10px;
+        width: 390px;
+    }
+    .tag>h2 {
+        font-size: 1.3rem;
+    }
+    #Products {
+        width: 85%;
+        margin-top: 24px;
+        align-items: center;
+    }
+    #Products>div {
+        width: 60%;
+    }
+    #top {
+        width: 80%;
+        margin: auto;
+    }
+    #bottom {
+        width: 80%;
+        margin: auto;
+    }
+    #top>div>h2 {
+        font-size: 11px;
+    }
+    #top>div>p {
+        font-size: 13px;
+    }
+    #bottom>div>h2 {
+        font-size: 11px;
+    }
+    #bottom>div>p {
+        font-size: 13px;
+    }
+    #zara {
+        width: 100%;
+        height: 200px;
+    }
+    .zara {
+        width: 340px;
+        height: 100px;
+    }
+    #seller {
+        width: 100%;
+        justify-content: center;
+    }
+    .zara {
+        width: 100px;
+        height: 80px;
+        bottom: 50%;
+        top: 12px;
+        left: 56%;
+    }
+    .lorem {
+        position: absolute;
+        bottom: 10px;
+        left: 54%;
+        bottom: 4%;
+    }
+    .lorem>p {
+        font-size: 14px;
+        color: #fff;
+    }
+    .lorembtn {
+        margin-top: 25px;
+        width: 130px;
+        height: 32px;
+        border-radius: 2px;
+        background-color: aliceblue;
+        color: black;
+        justify-content: center;
+    }
+    #seller {
+        width: 100%;
+        margin-bottom: 15%;
+        justify-content: center;
+    }
+    #Product2 {
+        width: 85%;
+        margin-top: 24px;
+        align-items: center;
+    }
+    #Product2>div {
+        width: 60%;
+    }
+    #slider {
+        width: 85%;
+    }
+    #ig {
+        width: 100%;
+        height: 700px;
+    }
+    #siximg {
+        width: 90%;
+    }
+    #ig>div>img {
+        height: 110px;
+        width: 110px;
+    }
+    #email {
+        width: 100%;
+    }
+    #form {
+        width: 77%;
+        justify-content: left;
+    }
+    #submit {
+        width: 10%;
+        height: 45px;
+        margin-left: 5%;
+        border-bottom: 3px solid black;
+    }
+    #formemail {
+        width: 85%;
+        height: 45px;
+        background-color: transparent;
+        border-bottom: 3px solid black;
+    }
+    #formemail::placeholder {
+        padding-left: 2%;
+    }
+    #footer {
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+    }
+    #first {
+        width: 30%;
+        padding-left: 3%;
+    }
+    #first>div {
+        margin-top: 6px;
+        width: 86%;
+    }
+    #first>img {
+        height: 30px;
+    }
+    #footer>div>p {
+        font-size: 12px;
+    }
+    #fourth {
+        width: 32%;
+        margin-left: 4%;
+    }
+    #third {
+        width: 25%;
+        justify-content: left;
+    }
+    .logo {
+        margin-top: 2px;
+    }
+    .foot {
+        width: 100%;
+        padding-top: 10px;
+    }
+}
+
+
+/*@media screen and (min-width:640px) {
+    #screen {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    #home {
+        width: 100%;
+    }
+    #nav>h2 {
+        font-size: 9px;
+    }
+    #right>img {
+        width: 170px;
+        height: 320px;
+    }
+    .back {
+        width: 170px;
+        height: 320px;
+    }
+    /* .mid {
+        width: 90%;
+        height: 100%;
+        background-color: red;
+        margin: auto;
+        justify-content: center;
+    } */
+
+
+/* #subscribe {
+        width: 100%;
+        margin-top: 64px;
+        align-items: center;
+        justify-content: center;
+    }
+    #mid1 {
+        width: 100%;
+        justify-content: center;
+        margin: 12px 12px 12px auto;
+    }
+    #Products {
+        width: 85%;
+        margin-top: 24px;
+        align-items: center;
+        /* margin-left: 28%; */
+
+
+/*}
+    #Products>div {
+        width: 60%;
+    }
+    #top {
+        width: 85%;
+        margin: auto;
+    }
+    #bottom {
+        width: 85%;
+        margin: auto;
+    }
+    #top>div>h2 {
+        font-size: 11px;
+    }
+    #top>div>p {
+        font-size: 13px;
+    }
+    #bottom>div>h2 {
+        font-size: 11px;
+    }
+    #bottom>div>p {
+        font-size: 13px;
+    }
+    #zara {
+        width: full;
+    }
+    .dancer {
+        width: 100%;
+    }
+    .zara {
+        width: 5%;
+    }
+    #seller {
+        width: 1046px;
+        justify-content: center;
+    }
+    #Product2 {
+        width: 810px;
+        margin-top: 24px;
+        margin-left: 28%;
+    }
+    #Product2>div {
+        width: 40%;
+    }
+    #slider {
+        width: 810px;
+        margin-left: 28%;
+    }
+    #ig {
+        width: 1046px;
+        height: 700px;
+    }
+    #ig>div>img {
+        height: 120px;
+        width: 120px;
+    }
+    #email {
+        width: 810px;
+        margin-left: 15%;
+    }
+    #footer {
+        width: 1040px;
+        margin: auto;
+        justify-content: center;
+    }
+    #fourth {
+        width: 25%;
+    }
+    .logo {
+        margin-top: 2px;
+    }
+    .foot {
+        width: 1046px;
+        padding-top: 10px;
+    }
+}
+
+
+/* @media screen and (max-width:1520px) {
+    #screen {
+        width: 1520px;
+    }
+    #home {
+        width: 100%;
+    }
+} */
